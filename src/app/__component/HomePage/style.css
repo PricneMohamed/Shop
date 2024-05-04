@@ -1,0 +1,22 @@
+.carding{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.carding::after{
+    content: '';
+    position:absolute;
+    width: 140%;
+    margin-right: 40px;
+    right: -100px;
+    height: 100%;
+    transform: rotate(-10deg);
+    top: 400px;
+    transition: 0.4s;
+    /* absolute w-[100vw] clone top-[300px] bg-gref
+            h-[100%]
+            bg-green-500 */
+}
+.carding:hover::after{
+    top: 100px;
+}
